@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+#header{
+    text-align: center;
+    margin: 30px 0;
+}
+
+#header h1{
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#inscri{
+    width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label{
+    display: inline-block;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#ajouter{
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 20px;
+    cursor: pointer;
+}
