@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Homm Page</title>
+    <title>Home page</title>
 </head>
 <body>
     
+<section class="student-list">
+  <h2>Etudients List</h2>
 
+  <div class="rechercher-bar">
+    <label for="rechercheEtudiant">Rechercher des étudiants</label>
+    <input
+      type="search"
+      id="rechercheEtudiant"
+      placeholder="Rechercher par nom, email ou programme"
+    >
+    <button type="button" id="btnRechercher">Rechercher</button>
+  </div>
+<br>
+  <div class="table-responsive">
+    <table id="etudiantsTable">
+      <thead>
+        <tr>
+          <th>premier nom</th>
+          <th>Nom de famille</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Age</th>
+          <th>Program</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody id="listeEtudiants">
+
+      </tbody>
+    </table>
+  </div>
+</section>
 </body>
 </html>
