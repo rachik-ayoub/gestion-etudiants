@@ -1,3 +1,151 @@
+:root {
+  color-scheme: light;
+  --ink: #20324a;
+  --muted: #718096;
+  --accent: #3278c7;
+  --accent-dark: #245f9f;
+  --line: #e4eaf1;
+  --surface: #ffffff;
+  --page: #f3f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.student-list {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid rgba(228, 234, 241, 0.9);
+  border-radius: 18px;
+  box-shadow: 0 16px 44px rgba(35, 62, 91, 0.09);
+}
+
+.student-list h2 {
+  margin: 0 0 24px;
+  color: var(--ink);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.03em;
+}
+
+.rechercher-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.rechercher-bar label {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.rechercher-bar input {
+  grid-column: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  outline: none;
+  background: #fbfdff;
+  color: var(--ink);
+  font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.rechercher-bar input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(50, 120, 199, 0.14);
+}
+
+
+button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(50, 120, 199, 0.3);
+  outline-offset: 2px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+
+thead {
+  background: #f5f8fc;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  color: #53657a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+td {
+  color: #384b62;
+  font-size: 0.92rem;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr:hover {
+  background: #f8fbff;
+}
+
+tbody button {
+  min-height: 34px;
+  margin: 2px 4px 2px 0;
+  padding: 0 11px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+}
+
+  th,
+  td {
+    padding: 12px;
+  }
 body{
     font-family: Arial, sans-serif;
 }
